@@ -1,0 +1,29 @@
+//using loop to create 7 pictures width different sizes
+.generate-images(@n, @i: 1) when (@i =< @n) {
+    .image-@{i} {
+      height: image-height("../images/margot.jpg")/@i;
+      width: image-width("../images/margot.jpg")/@i;
+      display: block;
+      margin: 20px auto;
+    }
+    .generate-images(@n, (@i + 1));
+  }
+
+.generate-images(7);
+
+.content {
+    padding: 20px;    
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color: aquamarine;
+    width: 400px;
+    padding: 5px;
+    margin: 20px auto;
+}
+
+h2:extend(h1) {};

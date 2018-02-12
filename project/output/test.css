@@ -1,0 +1,56 @@
+.image-1 {
+  height: 842px;
+  width: 736px;
+  display: block;
+  margin: 20px auto;
+}
+.image-2 {
+  height: 421px;
+  width: 368px;
+  display: block;
+  margin: 20px auto;
+}
+.image-3 {
+  height: 280.66666667px;
+  width: 245.33333333px;
+  display: block;
+  margin: 20px auto;
+}
+.image-4 {
+  height: 210.5px;
+  width: 184px;
+  display: block;
+  margin: 20px auto;
+}
+.image-5 {
+  height: 168.4px;
+  width: 147.2px;
+  display: block;
+  margin: 20px auto;
+}
+.image-6 {
+  height: 140.33333333px;
+  width: 122.66666667px;
+  display: block;
+  margin: 20px auto;
+}
+.image-7 {
+  height: 120.28571429px;
+  width: 105.14285714px;
+  display: block;
+  margin: 20px auto;
+}
+.content {
+  padding: 20px;
+}
+h1,
+h2 {
+  font-size: 40px;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 30px;
+  background-color: aquamarine;
+  width: 400px;
+  padding: 5px;
+  margin: 20px auto;
+}
