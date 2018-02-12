@@ -1,0 +1,100 @@
+/*  Я разобрался с less и для чего это надо я тоже понял,
+    В следующих своих "проектах" я буду использовать эту технологию.
+    Проблема в том, что неудобно переделовать уже существующий css под less.
+    Именно поэтому здесь так мало используется этой технологии */
+.center {
+  text-align: center;
+}
+.default-background {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.default-padding {
+  padding: 20px;
+}
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1 {
+  color: #fff;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 45px;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  width: 90%;
+  border: 2px solid yellowgreen;
+  border-radius: 20px;
+}
+.registration h2 {
+  color: white;
+  font-size: 33px;
+  text-align: center;
+}
+.maincontent {
+  position: relative;
+  width: 90%;
+  padding: 20px;
+  margin: 20px auto;
+}
+.maincontent .registration form input {
+  position: static;
+  display: block;
+  margin: 10px auto;
+  height: 30px;
+}
+.maincontent .registration form label {
+  display: block;
+  margin: 10px 0;
+  font-size: 25px;
+}
+.maincontent .registration button {
+  display: block;
+  color: black;
+  padding: 8px;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 20px auto;
+}
+.maincontent .registration input[type="radio"] {
+  display: inline;
+  height: auto;
+}
+.maincontent .registration,
+.maincontent .hello {
+  margin: 20px 40px;
+  color: white;
+  background-color: #030e3d;
+  border: 2px solid #fff;
+  border-radius: 0px;
+}
+.maincontent .hello {
+  background-color: #030e3d;
+  padding: 20px;
+}
+.maincontent .hello {
+  border: 2px solid #fff;
+  border-radius: 0px;
+  background-color: #030e3d;
+}
+.maincontent .hello p {
+  font-size: 1.5em;
+  text-align: center;
+}
+.return {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  padding: 20px;
+  width: 50%;
+  border: 2px solid #fff;
+  border-radius: 0px;
+  background-color: #55241e;
+  margin: 10px auto;
+}
+.maincontent .registration * {
+  text-align: center;
+}

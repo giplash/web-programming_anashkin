@@ -1,0 +1,520 @@
+@media screen and (max-width: 600px) { 
+    body {
+        background-image: url("../images/background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;    
+    }
+    
+    h1 {
+        color: white;
+        font-family: 'Cuprum', sans-serif;
+        font-size: 50px;
+        margin: 10px auto;
+        padding: 20px;
+        text-align: center; 
+        background-color: black;   
+        width: 70%;
+        border: 2px solid yellowgreen;
+        border-radius: 20px;
+    }
+    
+    /* Выпадающее меню */
+    
+    .dws-menu {
+        border: 2px solid white;
+        padding: 20px;
+        background-color: rgb(3, 14, 61);
+        width: 70%;
+        margin: 10px auto 10px auto;
+        z-index: 50;
+    }
+    
+    .dws-menu h2 {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Cuprum', sans-serif;
+        text-decoration-line: underline;
+        margin-bottom: 20px;
+    }
+    
+    .dws-menu * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Cuprum', sans-serif;
+        color: white;
+    }
+    
+    .dws-menu ul,
+    .dws-menu ol {
+        list-style: none;
+        z-index: 50;
+    }
+    
+    .dws-menu > ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .dws-menu > ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px 30px 15px 40px;
+        font-size: 25px;     
+    
+    }
+    
+    .dws-menu > ul  li {
+        position: relative;  
+        border: 1px solid white;    
+        background-color: #162e24
+    
+    }     
+    
+    .dws-menu > ul > li:hover { 
+        background-color: #69f0ce;
+        color: white;
+        box-shadow: 1px 5px 10px -5px white;
+        transition: all 0.15s ease;
+    }
+    
+    .dws-menu li ul {
+        position: absolute;
+        width: 143px;
+        display: none;    
+    
+    }
+    
+    .dws-menu li > ul li {
+        border: 1px solid white;    
+    }
+    
+    .dws-menu li > ul li a {
+        padding: 10px;
+        text-transform: none;   
+    }
+    
+    .dws-menu li > ul li ul {
+        position: absolute;
+        right: -142px;
+        top: 0px;
+        
+    }
+    
+    .dws-menu li:hover > ul {
+        display: block;     
+        transition: all 1s ease; 
+    }
+    
+    .dws-menu li > ul li:hover {
+        background-color: rgb(114, 148, 120);
+    }
+    
+    
+    .content { 
+        width: 90%;    
+        margin: 20px auto;       
+        position: static;
+        border: 2px solid white;  
+        background-color: rgb(3, 14, 61);         
+    }
+    
+    /* float верстка */
+    
+    .float h3,
+    .float h4 {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Cuprum', sans-serif;
+        text-decoration-line: underline;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    .float h4 {
+        font-size: 30px;
+        text-align: start;
+    }
+    
+    .float { 
+        margin: 0 auto;   
+        position: relative;       
+    }
+    
+    .float .left,
+    .float .right {
+        font-family: sans-serif;
+        font-size: 20px;
+        color: white;    
+        margin: 20px 10%;
+        width: 20%;
+        float: left;    
+    }
+    
+    .float .right {
+        position: absolute;    
+        right: 0px;
+        width: 40%;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    .naomi {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    /* Inline-block layout */
+    
+    .inline-block { 
+        margin: 0px; 
+        padding: 20px;    
+    }
+    
+    .content h3 {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Cuprum', sans-serif;
+        text-decoration-line: underline;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    .inline-block h4 {
+        font-size: 1em;    
+        text-align: start;    
+    }
+        
+    .inline-block .column {
+        font-family: sans-serif;
+        font-size: 15px;
+        color: white;    
+        margin: 20px 10px;
+        width: 100px;
+        display: inline-block;    
+        border: 1px solid black;
+    }
+    
+    /* Table layout */
+    
+    .table {
+        display: table;
+        text-align: center;
+        margin: 30px auto;
+    }
+    
+    .table .item {
+        display: table-cell; 
+        border: 1px solid black;    
+    }
+    
+    .table .row {
+        display: table-row;    
+    }
+    
+    .table p {
+        color: white;
+        font-size: 25px;
+    }
+    
+    .table img {
+        width: 100px;
+        height: 80px;
+    }
+    
+    /* Flex layout */
+    
+    .flex {
+        display: flex;
+        text-align: center;
+        margin: 30px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    
+    .flex .item {    
+        border: 1px solid black;
+        width: 30%;    
+        margin-bottom: 100px;
+    }
+    
+    .flex p {
+        color: white;
+        font-size: 25px;
+    }
+    
+    .flex img {
+        width: 100px;
+        height: 80px;
+    }
+ } 
+
+ @media screen and (min-width: 600px) {
+    body {
+        background-image: url("../images/background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;    
+    }
+    
+    h1 {
+        color: white;
+        font-family: 'Cuprum', sans-serif;
+        font-size: 50px;
+        margin: 10px auto;
+        padding: 20px;
+        text-align: center; 
+        background-color: black;   
+        width: 70%;
+        border: 2px solid yellowgreen;
+        border-radius: 20px;
+    }
+    
+    /* Выпадающее меню */
+    
+    .dws-menu {
+        border: 2px solid white;
+        padding: 20px;
+        background-color: rgb(3, 14, 61);
+        width: 70%;
+        margin: 10px auto 10px auto;
+        z-index: 50;
+    }
+    
+    .dws-menu h2 {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Cuprum', sans-serif;
+        text-decoration-line: underline;
+        margin-bottom: 20px;
+    }
+    
+    .dws-menu * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Cuprum', sans-serif;
+        color: white;
+    }
+    
+    .dws-menu ul,
+    .dws-menu ol {
+        list-style: none;
+        z-index: 50;
+    }
+    
+    .dws-menu > ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .dws-menu > ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px 30px 15px 40px;
+        font-size: 25px;     
+    
+    }
+    
+    .dws-menu > ul  li {
+        position: relative;  
+        border: 1px solid white;    
+        background-color: #162e24
+    
+    }
+    
+    .dws-menu > ul > li:first-child { 
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    .dws-menu > ul > li:last-child { 
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    } 
+    
+    .dws-menu > ul > li:hover { 
+        background-color: #69f0ce;
+        color: white;
+        box-shadow: 1px 5px 10px -5px white;
+        transition: all 0.15s ease;
+    }
+    
+    .dws-menu li ul {
+        position: absolute;
+        width: 143px;
+        display: none;    
+    
+    }
+    
+    .dws-menu li > ul li {
+        border: 1px solid white;    
+    }
+    
+    .dws-menu li > ul li a {
+        padding: 10px;
+        text-transform: none;   
+    }
+    
+    .dws-menu li > ul li ul {
+        position: absolute;
+        right: -142px;
+        top: 0px;
+        
+    }
+    
+    .dws-menu li:hover > ul {
+        display: block;     
+        transition: all 1s ease; 
+    }
+    
+    .dws-menu li > ul li:hover {
+        background-color: rgb(114, 148, 120);
+    }
+    
+    
+    .content { 
+        width: 90%;    
+        margin: 20px auto;       
+        position: static;
+        border: 2px solid white;  
+        background-color: rgb(3, 14, 61);         
+    }
+    
+    /* float верстка */
+    
+    .float h3,
+    .float h4 {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Cuprum', sans-serif;
+        text-decoration-line: underline;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    .float h4 {
+        font-size: 30px;
+        text-align: start;
+    }
+    
+    .float { 
+        margin: 0 auto;   
+        position: relative;       
+    }
+    
+    .float .left,
+    .float .right {
+        font-family: sans-serif;
+        font-size: 20px;
+        color: white;    
+        margin: 20px 10%;
+        width: 20%;
+        float: left;    
+    }
+    
+    .float .right {
+        position: absolute;    
+        right: 0px;
+        width: 40%;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    .naomi {
+        float: left;
+        width: 55%;
+        height: 40%;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    /* Inline-block layout */
+    
+    .inline-block { 
+        margin: 0px;     
+    }
+    
+    .content h3 {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Cuprum', sans-serif;
+        text-decoration-line: underline;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    .inline-block h4 {
+        font-size: 1em;    
+        text-align: start;    
+    }
+
+    .inline-block .column {
+        font-family: sans-serif;
+        font-size: 20px;
+        color: white;    
+        margin: 20px 2%;
+        width: 20%;
+        display: inline-block;    
+        border: 1px solid black;
+    }
+    
+    /* Table layout */
+    
+    .table {
+        display: table;
+        text-align: center;
+        margin: 30px auto;
+    }
+    
+    .table .item {
+        display: table-cell; 
+        border: 1px solid black;    
+    }
+    
+    .table .row {
+        display: table-row;    
+    }
+    
+    .table p {
+        color: white;
+        font-size: 25px;
+    }
+    
+    .table img {
+        width: 55%;
+        height: 50%;
+    }
+    
+    /* Flex layout */
+    
+    .flex {
+        display: flex;
+        text-align: center;
+        margin: 30px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    
+    .flex .item {    
+        border: 1px solid black;
+        width: 30%;    
+        margin-bottom: 100px;
+    }
+    
+    .flex p {
+        color: white;
+        font-size: 25px;
+    }
+    
+    .flex img {
+        width: 55%;
+        height: 50%;
+    }
+ }

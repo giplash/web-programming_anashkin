@@ -1,0 +1,129 @@
+/*  Я разобрался с less и для чего это надо я тоже понял,
+    В следующих своих "проектах" я буду использовать эту технологию.
+    Проблема в том, что неудобно переделовать уже существующий css под less.
+    Именно поэтому здесь так мало используется этой технологии */
+
+// Variables
+@image: "../images/background.jpg";
+@block-background: rgb(3, 14, 61);
+@return-color: rgb(85, 36, 30);
+
+//functions && mixtins
+.bordered(@color, @radius: 0px) {
+    border: 2px solid @color;
+    border-radius: @radius;
+}
+
+.center {
+    text-align: center;
+}
+
+.default-background {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.default-padding {
+    padding: 20px;
+}
+
+//css
+
+body {
+    background-image: url(@image);
+    .default-background;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 45px;
+    margin: 10px auto;
+    .default-padding;
+    .center;
+    background-color: black;
+    width: 90%;
+    .bordered(yellowgreen, 20px)
+}
+
+.registration  h2 {
+    color: white;
+    font-size: 33px;
+    .center;
+}
+
+.maincontent {
+    position: relative;
+    width: 90%;
+    .default-padding;
+    margin: 20px auto;
+}
+
+.maincontent .registration form input{
+    position: static;
+    display: block;
+    margin: 10px auto;
+    height: 30px;
+}
+
+.maincontent .registration form label {
+    display: block;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.maincontent .registration button {
+    display: block;
+    color: black;
+    padding: 8px;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 20px auto;
+}
+
+.maincontent .registration input[type="radio"] {
+    display: inline;
+    height: auto;  
+}
+
+.maincontent .registration,
+.maincontent .hello {
+    margin: 20px 40px;
+    color: white;
+    background-color: @block-background;
+    .bordered(#fff);
+}
+
+.maincontent .hello {
+    background-color: @block-background;
+    .default-padding;
+}
+
+.maincontent .hello {
+    .bordered(#fff);
+    background-color: @block-background;
+}
+
+.maincontent .hello p {
+    font-size: 1.5em;
+    .center;
+}
+
+.return {
+    color: #fff;
+    .center;
+    font-size: 35px;
+    .default-padding;
+    width: 50%;
+    .bordered(#fff);
+    background-color: @return-color;
+    margin: 10px auto;
+}
+
+.maincontent {
+    .registration {
+        * {
+            .center;
+        }
+    }
+}
